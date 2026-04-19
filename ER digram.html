@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project - ER Diagram</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            padding: 30px;
+        }
+
+        /* Heading Style */
+        h1 {
+            font-size: 32px;
+            color: #1a3c5e;
+            text-align: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+            width: auto;
+        }
+
+        .heading-wrapper {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Project Description Box */
+        .description-box {
+            background: #f8f9fc;
+            border-left: 5px solid #3498db;
+            padding: 20px 25px;
+            border-radius: 12px;
+            margin-bottom: 35px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .description-box h2 {
+            font-size: 22px;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .description-box p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .description-box .project-details {
+            margin-top: 10px;
+            color: #555;
+            font-size: 15px;
+        }
+
+        /* ER Diagram Section */
+        .diagram-section {
+            text-align: center;
+        }
+
+        .diagram-section h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .diagram-container {
+            background: #fafbfd;
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid #e1e8f0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .er-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .image-placeholder {
+            background: #eef2f7;
+            border-radius: 12px;
+            padding: 60px 20px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 18px;
+        }
+
+        .image-placeholder i {
+            font-size: 48px;
+            margin-bottom: 15px;
+            display: block;
+            color: #bdc3c7;
+        }
+
+        .info-note {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #7f8c8d;
+            background: #fef9e6;
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e6ed;
+            font-size: 13px;
+            color: #95a5a6;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            .description-box h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Heading -->
+    <div class="heading-wrapper">
+        <h1>📊 Project ER Diagram</h1>
+    </div>
+
+    <!-- Project Description -->
+    <div class="description-box">
+        <h2>
+            <span>📋</span> Project Description
+        </h2>
+        <p><strong>Project Title:</strong> Restaurant Management System</p>
+        <p><strong>Overview:</strong> The Restaurant Management System is a comprehensive web-based application designed to streamline restaurant operations by providing separate interfaces for customers and owners. This system digitizes the entire dining experience from table booking to payment processing, while giving restaurant owners powerful tools to manage their business efficiently.</p>
+        <div class="project-details">
+            <strong>✨ Key Features:</strong>
+            <ul style="margin-top: 8px; margin-left: 20px;">
+                <li>Automate Restaurant Operations: Reduce manual work and paperwork</li>
+                <li>Enhance Customer Experience: Provide seamless digital ordering experience</li>
+                <li>Real-time Management: Enable owners to monitor and control operations instantly</li>
+                <li>Data-driven Decisions: Provide analytics and insights for business growth</li>
+                <li>Error Reduction: Minimize human errors in order taking and billing</li>
+            </ul>
+        </div>
+        <div class="project-details" style="margin-top: 12px;">
+            <strong>🗄️ Database Entities:</strong> order, Menu, Payment, Tables, Order details, Customer,User_id
+        </div>
+    </div>
+
+    <!-- ER Diagram Section -->
+    <div class="diagram-section">
+        <h2>
+            <span>🔗</span> Entity-Relationship (ER) Diagram
+        </h2>
+        <div class="diagram-container">
+            <!-- 
+                ⚠️ IMPORTANT: Replace the src attribute with your actual ER diagram image path.
+                If your image is in the same folder, use: src="er-diagram.png"
+                If it's online, paste the full URL inside src="YOUR_IMAGE_URL_HERE"
+            -->
+           <img id="erDiagramImg" class="er-image" 
+             src="er.png" 
+             alt="ER Diagram">
+            <!-- Simple instruction to replace image -->
+            <div class="info-note">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        🧑‍🎓 Project Submission | ER Diagram for Teacher Review
+    </footer>
+</div>
+
+<!-- Optional: Simple script to show image upload option (if needed, but teacher said just show ER diagram) -->
+<!-- This script allows user to click on image to replace with their own file - makes it easy for demo -->
+<script>
+    // Simple click-to-upload feature for ER diagram (makes it easy to show your own picture)
+    const erImage = document.getElementById('erDiagramImg');
+    
+    // Add a hint that you can click to change image (convenient for teacher presentation)
+    erImage.style.cursor = 'pointer';
+    erImage.title = 'Click to upload your ER diagram image';
+    
+    erImage.addEventListener('click', function() {
+        // Create file input dynamically
+        const fileInput = document.createElement('input');
+        fileInput.type = 'file';
+        fileInput.accept = 'image/png, image/jpeg, image/jpg, image/webp, image/svg+xml';
+        fileInput.onchange = function(event) {
+            const file = event.target.files[0];
+            if (file && file.type.match('image.*')) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    erImage.src = e.target.result;
+                    // Remove placeholder text effect
+                    erImage.style.objectFit = 'contain';
+                };
+                reader.readAsDataURL(file);
+            } else {
+                alert('Please select a valid image file (PNG, JPG, etc.)');
+            }
+        };
+        fileInput.click();
+    });
+    
+    // Optional: if image fails to load, show friendly message
+    erImage.onerror = function() {
+        this.src = 'https://via.placeholder.com/800x500/ecf0f1/2c3e50?text=ER+Diagram+Missing%0A%0AClick+on+this+box+to+upload+your+diagram';
+    };
+</script>
+
+</body>
+</html>
